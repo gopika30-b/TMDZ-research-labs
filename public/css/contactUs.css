@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter'
+
+}
+
+/* NavBar */
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  min-width: 100%;
+  height: 70px;
+  z-index: 100;
+  background: #fff;
+}
+
+header .navigation .logo {
+  margin-left: 20px;
+  margin-top: 42px;
+  z-index: 90;
+}
+
+header .navigation .menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  margin: auto 20px auto 0;
+}
+
+header .navigation .humbarger {
+  margin-right: 20px;
+  display: none;
+}
+
+header .navigation .humbarger .bar {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background: #094FB7;
+}
+
+header .navigation .menu-list li a {
+  position: relative;
+  color: #094FB7;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 1s ease, border 1s ease;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+header .navigation .menu-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #094FB7;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+header .navigation .menu-list li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+  header .navigation .menu-list {
+    width: 65%;
+  }
+
+  header .navigation .menu-list li a {
+    font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  header .navigation .menu-list {
+    position: absolute;
+    top: 70px;
+    min-width: 100%;
+    background: #fff;
+    text-align: center;
+    display: none;
+  }
+
+  header .navigation .menu-list li {
+    display: block;
+  }
+
+  header .navigation .menu-list li a {
+    display: block;
+    padding: 20px;
+    transition: color 1s ease, padding 1s ease, background-color 1s ease;
+
+  }
+
+  header .navigation .menu-list li a:hover {
+    color: #094FB7;
+    padding-left: 30px;
+    background: rgba(177, 212, 224, 0.2);
+  }
+
+
+  header .navigation .humbarger {
+    display: block;
+  }
+
+  header .navigation .menu-list li a:hover::after {
+    transform: scaleX(0);
+  }
+}
+
+/* Contact Form Section */
+#contactForm {
+  height: auto;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+#contactForm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(-5deg, #fff 50%, #094FB7 50%);
+}
+
+#contactForm .contactForm {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-top: 15%;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#contactForm .contactForm .content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 35px;
+}
+
+#contactForm .contactForm .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm .contactForm .content .mail {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+#contactForm .contactForm .content .mail i {
+  background-color: rgba(78, 125, 196, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29px;
+  width: 29px;
+  border-radius: 50px;
+}
+
+#contactForm .contactForm .content .mail .boxes {
+  padding-left: 20%;
+  display: grid;
+  grid-template-columns: 33px 33px;
+  gap: 3px;
+}
+
+#contactForm .contactForm .content .mail .boxes .box {
+  height: 33px;
+  width: 33px;
+  background-color: rgba(78, 125, 196, 0.3);
+  border-radius: 5px;
+  transform: rotate(12deg);
+  margin-left: 33px;
+}
+
+#contactForm .contactForm .content .connect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contactForm .contactForm .content .connect .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#contactForm .contactForm .content .connect .text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+#contactForm .contactForm .content .connect .icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 29px;
+  width: 29px;
+  border-radius: 50px;
+  background-color: rgba(78, 125, 196, 0.3);
+}
+
+#contactForm .contactForm .form {
+  width: 580px;
+  height: 420px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contactForm .contactForm .form .name-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contactForm .contactForm .form .name-phone .name input,
+#contactForm .contactForm .form .name-phone .phone input {
+  width: 220px;
+}
+
+#contactForm .contactForm .form .email input,
+#contactForm .contactForm .form .msg input {
+  width: 510px;
+}
+
+#contactForm .contactForm .form button {
+  width: 220px;
+  background-color: #094FB7;
+  border: none;
+  padding: 5px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1366px) {
+  #contactForm .contactForm {
+    padding-top: 10%;
+  }
+
+  #contactForm .contactForm .content {
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #contactForm .contactForm {
+    padding-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  #contactForm .contactForm .content .mail .boxes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #contactForm .contactForm .form {
+    width: 380px;
+    height: 550px;
+    padding: 25px;
+  }
+
+  #contactForm .contactForm .form .name-phone {
+    flex-direction: column;
+  }
+
+  #contactForm .contactForm .form .name-phone .name input,
+  #contactForm .contactForm .form .name-phone .phone input {
+    width: 510px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contactForm {
+    height: auto;
+    padding-top: 60px;
+  }
+
+  #contactForm::before {
+    display: none;
+  }
+
+  #contactForm .contactForm {
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    justify-content: center;
+    background-color: #094FB7;
+  }
+
+  #contactForm .contactForm .content {
+    gap: 20px;
+  }
+
+  #contactForm .contactForm .content .text h2 {
+    font-size: 19px;
+  }
+
+  #contactForm .contactForm .content .mail .boxes {
+    display: none;
+  }
+
+  #contactForm .contactForm .content .connect {
+    padding-bottom: 40px;
+  }
+
+  #contactForm .contactForm .form {
+    height: auto;
+    width: auto;
+    padding-bottom: 40px;
+    gap: 25px;
+  }
+
+  #contactForm .contactForm .form .name-phone {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #contactForm .contactForm .form .name-phone .name input,
+  #contactForm .contactForm .form .name-phone .phone input,
+  #contactForm .contactForm .form .email input,
+  #contactForm .contactForm .form .msg input {
+    width: 100%;
+  }
+
+  #contactForm .contactForm .form button {
+    width: 100%;
+  }
+}
+
+
+/*Footer*/
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer #copyrights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+}
+
+#footer #copyrights #socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#footer #copyrights #socialMedia a {
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+#footer #copyrights #socialMedia a:hover {
+  color: #094FB7;
+}
+
+#footer #copyrights .credit {
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+#footer .policies {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  gap: 20px;
+}
+#footer .policies a{
+  color: #888;
+  text-decoration: none;
+}
+#footer .policies a:hover{
+  color: #094FB7;
+}
+#footer #copyrights .policies{
+  display: none;
+}
+@media screen and (max-width: 1116px) {
+  #footer .policies {
+      gap: 10px;
+      font-size: small;
+  }
+}
+@media screen and (max-width: 980px) {
+  #footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+  #footer .policies {
+      display: none;
+  }
+  #footer #copyrights .policies{
+      display: block;
+      padding-bottom: 10px;
+  }
+  #footer #copyrights{
+      align-items: center;
+      justify-content: center;
+  }
+  #footer #logoImg{
+      display: none;
+  }
+}

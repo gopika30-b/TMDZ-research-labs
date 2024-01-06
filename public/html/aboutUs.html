@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechMeDZ - About Us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/x-icon" href="../asserts/TechMeDZ.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/aboutUs.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="../asserts/logo.png" />
+      </div>
+      <ul class="menu-list">
+        <li><a onclick="redirectTo('/')" style="color: #094FB7;">Home</a></li>
+        <li><a onclick="redirectTo('/aboutUs')" style="color: #094FB7;">About Us</a></li>
+        <li><a onclick="redirectTo('/community')" style="color: #094FB7;">Community</a></li>
+        <li><a onclick="redirectTo('/internship')" style="color: #094FB7;">Join Us</a></li>
+        <li><a onclick="redirectTo('/contactUs')" style="color: #094FB7;">Contact Us</a></li>
+      </ul>
+
+      <div class="humbarger">
+        <div class="bar"></div>
+        <div class="bar2 bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="heroPage">
+    <div class="heroLeft">
+      <img src="../asserts/main.png" alt="" srcset="" />
+    </div>
+    <div class="heroContent">
+      <div class="catchy">
+        Bridging Horizons,<br />
+        Healing Futures
+      </div>
+      <div class="des">
+        At TechMeDZ Labs, innovation isn't just a buzzword; it's the force
+        propelling us into a future where healthcare is redefined. More than a
+        startup, we're a force of change, passionately pioneering solutions
+        that transform the landscape of well-being. Join us on this artistic
+        journey as we paint a picture of a healthier, more vibrant world.
+      </div>
+      <div class="exploreBtn">
+        <button onclick="scrollToNextSection()">
+          Explore <i class="fas fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="heroRight">
+      <img src="../asserts/subMain.png" alt="" srcset="" />
+    </div>
+  </div>
+
+  <div id="missionVision">
+    <div class="missionVision">
+      <div id="vision">
+        <img src="../asserts/vision.png" alt="" srcset="" />
+        <div class="content">
+          <h2>Vision of TechMeDZ</h2>
+          <p>
+            TechMeDZ envisions a transformative approach to address the
+            persistent challenges and criticism surrounding donor organ
+            availability in India. Leveraging cutting-edge Biofabrication
+            Technology, our vision is to revolutionize organ transplantation
+            by reducing dependence on traditional donor sources. By pioneering
+            innovative solutions, we aim to create biofabricated organs that
+            are not only readily available but also ethically and sustainably
+            produced. Through this vision, TechMeDZ strives to reshape the
+            narrative of organ transplantation in India, ensuring a future
+            where advanced biotechnological solutions alleviate the burden on
+            donors and offer new hope to those in need.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div id="mission">
+        <div class="content">
+          <h2>Mission of TechMeDZ</h2>
+          <p>
+            TechMeDZ is on a mission to pioneer biofabrication innovation in
+            India. We aim to create a versatile bioink formula for high cell
+            viability, develop a cutting-edge Made in India bio printer with
+            AI-based cell monitoring, and 3D print biocompatible prosthetics.
+            Our state-of-the-art Center for Excellence in Biofabrication will
+            introduce advanced equipment, and we aspire to print functional
+            human organs for diverse applications. Additionally, we aim to
+            represent India in global collaborations for advancements in
+            Biotechnology and Medical Science.
+          </p>
+        </div>
+        <img src="../asserts/mission.png" alt="" srcset="" />
+      </div>
+    </div>
+    <div id="partners">
+      <div class="catchy">
+        <h4 style="padding-top: 14px;">In Partnership We Trust,<br /> In Success We Thrive</h4>
+        <div class="partners">
+          <div><img src="../asserts/startupIN.png" alt="StartUp India"></div>
+          <div><img src="../asserts/citchennai.png" alt="CIT Chennai"></div>
+          <div> <img src="../asserts/citil.jpg" alt="CITIL"></div>
+          <div><img src="../asserts/zoho.png" style="background-color: white; padding: 5px;" alt="ZOHO for StartUp"></div>
+          <div id="last-child"><img src="../asserts/MS.png" alt="MS for Startup"></div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <div id="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../asserts/Think To Dare.jpg" class="d-block w-100" alt="Think To Dare">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="background-color:#000; opacity: 0.7; padding: 2px;">#thinktodare series, CXOs Meetup At Raj Bhavan</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asserts/internsB1.jpg" class="d-block w-100" alt="Internship Batch 1">
+          <div class="carousel-caption d-none d-md-block">
+           <h5 style="background-color:#000; opacity: 0.7; padding: 2px;"> Awarding Internship Certificates to Batch 1 Achievers</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asserts/StartUp Tamizha.jpg" class="d-block w-100" alt="StartUp Tamizha Event">
+          <div class="carousel-caption d-none d-md-block">
+           <h5 style="background-color:#000; opacity: 0.7; padding: 2px;">Startup Thamizha Grand Launch & Concept Reveal at IIT Madras Research Park (IITMRP)</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asserts/openWever.jpg" class="d-block w-100" alt="Open Wever">
+          <div class="carousel-caption d-none d-md-block">
+           <h5 style="background-color:#000; opacity: 0.7; padding: 2px;">Highlighting Interns' Participation in the Make-a-Thon event by Open Weaver and CITIL</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asserts/internB2.jpg" class="d-block w-100" alt="Internship Batch 2">
+          <div class="carousel-caption d-none d-md-block">
+           <h5 style="background-color:#000; opacity: 0.7; padding: 2px;">Recognizing Excellence in Internship - Batch 2 Certificate Ceremony</h5>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../asserts/GBI.jpg" class="d-block w-100" alt="GBI">
+          <div class="carousel-caption d-none d-md-block">
+           <h5 style="background-color:#000; opacity: 0.7; padding: 2px;">Global Bio India 2023: Unveiling Innovations in Healthcare at Bharat Mandapam, New Delhi </h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="collaboration">
+    <div class="content">
+      <div class="catchy">Uniting Forces for Biotech Excellence</div>
+      <div class="para">
+        TechMeDZ thrives on collaboration, a nexus where ideas converge for
+        biotech brilliance. Join us in this journey of shared innovation,
+        where together, we shape a transformative path forward.<br />
+        Together, let's pioneer advancements that make a lasting impact on
+        healthcare worldwide !
+      </div>
+      <button id="collaborationBtn">Lets Work Together &rarr;</button>
+    </div>
+    <div class="services">
+      <div class="service" id="service1">
+        <h4 style="text-align: center">Focusing Sector</h4>
+        <br />
+        <p><i class="fas fa-check"></i> Pharmaceutical Industry</p>
+        <p><i class="fas fa-check"></i> Medical Prototyping</p>
+        <p><i class="fas fa-check"></i> Cosmetology</p>
+        <p><i class="fas fa-check"></i> Dental Applications</p>
+        <p><i class="fas fa-check"></i> Bio Prosthetics</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="team">
+    <div class="starter">
+      <h1>Meet the individuals who breathe life into TechMeDZ</h1>
+      <p>
+        Meet the individuals who breathe life into TechMeDZ - a team where
+        passion meets brilliance, propelling us towards a future defined by
+        innovation and excellence. At TechMeDZ Labs, our team is more than
+        colleagues. we're a symphony of innovation, harmonizing expertise to
+        compose the future of healthcare. Together, we navigate the frontier
+        of biotechnology, transforming challenges into breakthroughs, and
+        shaping a healthier world.
+      </p>
+    </div>
+    <div class="mentor">
+      <div class="vl">
+        <p>
+          Mr. Surendar K V, a distinguished professional with a Bachelor's
+          degree in Mechanical Engineering and an MBA, plays a crucial role as
+          the Mentor and Legal Advisor at TechMeDZ Labs, where
+          he leverages his extensive expertise to provide guidance and
+          strategic counsel to advance the company's objectives.
+        </p>
+      </div>
+      <img src="../asserts/Surendar Kannan.jpg" alt="" srcset="" />
+    </div>
+    <div class="responsive-container-block outer-container">
+      <div class="responsive-container-block inner-container">
+        <div class="responsive-container-block">
+          <div class="swiper team-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../asserts/Ravimukilan Mohankumar.png">
+                  </div>
+                  <div class="card-content">
+                    <p class="text-blk name">
+                      Mr. Ravimukilan Mohankumar
+                    </p>
+                    <p class="text-blk position">
+                      Founder and Director
+                    </p>
+                    <div class="text-blk socialMedia">
+                      <a
+                        href="https://www.linkedin.com/in/ravimukilan-m/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <a href="mailto:ravimukilanm@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://www.instagram.com/ravimukilan_official/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../asserts/Sai Sreeya Konjeti.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p class="text-blk name">
+                      Ms. Sai Sreeya Konjeti
+                    </p>
+                    <p class="text-blk position">
+                      Co-Founder and Director
+                    </p>
+                    <div class="text-blk socialMedia">
+                      <a
+                        href="https://www.linkedin.com/in/sai-sreeya-konjeti-7634461bb/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <a href="mailto:sreeyak@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://instagram.com/sree_as_hinata/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../asserts/Sweatha Kannan.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p class="text-blk name">
+                      Ms.Sweatha Kannan
+                    </p>
+                    <p class="text-blk position">
+                      Innovation Chief
+                    </p>
+                    <div class="text-blk socialMedia">
+                      <a
+                        href="https://www.linkedin.com/in/sweatha-k-m-45b443253/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <a href="mailto:sweathakm@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://www.instagram.com/swea1426/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../asserts/CEO.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p class="text-blk name">
+                      Ms. Niranjana Natarajan
+                    </p>
+                    <p class="text-blk position">
+                      Chief Executive Officer
+                    </p>
+                    <div class="text-blk socialMedia">
+                      <a
+                        href="https://www.linkedin.com/in/niranjana-n-503715256/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <a href="mailto:niranjanan@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://www.instagram.com/nira__29/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../asserts/Finance Head.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p class="text-blk name">
+                      Mr. Karthikeyan Sundaram
+                    </p>
+                    <p class="text-blk position">
+                      Finance Head
+                    </p>
+                    <div class="text-blk socialMedia">
+                      <a
+                        href="https://www.linkedin.com/in/karthikeyan-es/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+
+                      <a href="mailto:karthikeyanes@techmedz.in">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+
+                      <a href="https://www.instagram.com/esk__friend__of__all/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination container-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="logoImg">
+      <img src="../asserts/logo.png" alt="Logo">
+    </div>
+    <div id="copyrights">
+      <p>&copy;2023 TMDZ Research Labs Private Limited - All rights are reserved</p>
+      <div class="policies">
+        <a href="https://techmedz.my.canva.site/tmdz-research-labs-privacy-policy" target="_blank" >Privacy Policy</a>
+
+        <a href="https://techmedz.my.canva.site/terms-of-use-tmdz-research-labs-private-limited" target="_blank" >Terms of use</a>
+      </div>
+      <div id="socialMedia">
+        <a href="https://www.linkedin.com/company/techmedzlabs/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="tel:+919384189371"><i class="fas fa-phone"></i></a>
+        <a href="mailto:info@techmedz.in"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/techmedzlabs/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/techmedzlabs"><i class="fab fa-twitter"></i></a>
+        <a href="https://discord.gg/tYFaXcvXGR"><i class="fab fa-discord"></i></a>
+        <a href="https://techmedzlabs.blogspot.com/"><i class="fab fa-blogger"></i></a>
+      </div>
+      <p class="credit">Developed by TMDZians</p>
+    </div>
+
+    <div class="policies">
+      <a href="https://techmedz.my.canva.site/tmdz-research-labs-privacy-policy" target="_blank" >Privacy Policy</a>
+
+      <a href="https://techmedz.my.canva.site/terms-of-use-tmdz-research-labs-private-limited" target="_blank" >Terms of use</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/aboutUs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
