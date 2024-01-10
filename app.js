@@ -16,8 +16,7 @@ app.get('/internship', (req,res) => {
 app.get('/contactUs', (req,res) => {
     res.sendFile(__dirname + '/public/html/contactUs.html')
 });
-app.post('/contactUs', (req,res) => {
-    console.log(req.body);
+app.post('/contactUs', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -26,16 +25,25 @@ app.post('/contactUs', (req,res) => {
         }
     });
     const mailOptions = {
-        from: req.body.email,
         to: 'info@techmedz.in',
-        subject: `Message from ${req.body.name}`,
-        text: req.body.message
+        subject: `Contact Form - Message from ${req.body.name}`,
+        text: "Name: " + req.body.name + "\n" + "Phone Number: " + req.body.phone + "\n" + "Email Id: " + req.body.email + "\n\n" + req.body.message
+    };
+    const confirmationMailOptions = {
+        to: req.body.email,
+        subject: 'TMDZ Research Labs - We have received your message',
+        text: 'Thank you for contacting us. We have received your message and will get back to you as soon as possible.'
     };
     transporter.sendMail(mailOptions, (error, info) => {
-        if (error){
+        if (error) {
             res.send('error');
-        } else{
-            res.send('success');
+        } else {
+            transporter.sendMail(confirmationMailOptions, (confirmationError, confirmationInfo) => {
+                if (confirmationError) {
+                    console.error('Error sending confirmation email:', confirmationError);
+                }
+                res.send('success');
+            });
         }
     });
 });

@@ -54,9 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-function redirectTo(url) {
-  window.location.href = url;
-}
+
 
 
 
