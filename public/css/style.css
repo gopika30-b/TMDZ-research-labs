@@ -269,7 +269,7 @@ header .navigation .menu-list li a:hover::after {
     background-image: none;
     flex-direction: column-reverse;
     padding: 50px 40px;
-    padding-bottom: 0px;
+    padding-bottom: 40px;
     gap: 20px;
     background-size: auto;
     background-repeat: no-repeat;
