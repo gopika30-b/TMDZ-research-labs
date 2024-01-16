@@ -537,7 +537,7 @@ header .navigation .menu-list li a:hover::after {
   border-bottom: 3px solid #094FB7;
 }
 
-.page3 .pg3-statistics {
+.page3 .stats {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -545,12 +545,12 @@ header .navigation .menu-list li a:hover::after {
   margin-bottom: 2rem;
 }
 
-.page3 .pg3-stats-content {
+.page3 .content {
   text-align: center;
   font-size: large;
 }
 
-.page3 .pg3-stats-num {
+.page3 .count {
   color: #0B63E5;
   font-size: 1.5em;
   padding-bottom: 0.2em;
@@ -587,7 +587,7 @@ header .navigation .menu-list li a:hover::after {
     padding-top: 20px;
   }
 
-  .page3 .pg3-statistics {
+  .page3 .stats {
     border-radius: 33px;
     width: 500px;
     flex-direction: row;
@@ -595,12 +595,12 @@ header .navigation .menu-list li a:hover::after {
     margin-bottom: 3em;
   }
 
-  .page3 .pg3-stats-content {
+  .page3 .content {
     text-align: center;
     font-size: small;
   }
 
-  .page3 .pg3-stats-num {
+  .page3 .count {
     color: #0B63E5;
     font-size: 1.3em;
     padding-bottom: 0.2em;

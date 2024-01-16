@@ -24,35 +24,38 @@ document.addEventListener("DOMContentLoaded", function () {
 function redirectTo(url) {
   window.location.href = url;
 }
+function animateNumbers() {
+  var counters = document.querySelectorAll('.count');
   
-function changeBackground1() {
-  document.body.style.background = 'url(meme.jpg) no-repeat';
-}
+  counters.forEach(function(counter) {
+      var target = +counter.innerText;
+      var current = 0;
+      var increment = 1; 
 
-function changeBackground2() {
-  document.body.style.background = 'url(meme.jpg) no-repeat';
-}
-function changeBackground3() {
-  document.body.style.background = 'url(meme.jpg) no-repeat';
-}
-function changeBackground4() {
-  document.body.style.background = 'url(meme.jpg) no-repeat';
-}
-function submitForm() {
-  var name = document.getElementById('name').value;
-  var phone = document.getElementById('phone').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
-  if (name && phone && email && message) {
-      alert('Thank you for reaching out! Your message has been received, and we\'ll get back to you as soon as possible. In the meantime, feel free to explore more of our offerings. Have a great day!');
-  } else {
-      alert('Please fill out all fields before submitting.');
-  }
-}
-function scrollToNextSection() {
-    const section = document.getElementById("video");
+      var interval = setInterval(function() {
+          current += increment;
+          counter.innerText = Math.ceil(current);
 
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+          if (current >= target) {
+              clearInterval(interval);
+          }
+      }, 100); 
+  });
+}
+const targetElement = document.getElementById('stats');
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateNumbers();
     }
+  });
+}, { threshold: 0.5 }); 
+observer.observe(targetElement);
+function scrollToNextSection() {
+  const section = document.getElementById("video");
+
+  if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+  }
 }
